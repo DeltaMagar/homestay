@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <button class="hamburger">&#9776;</button> 
+            <button class="close-btn">&times;</button> 
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="about">
+        <h1>About Us</h1>
+        <p class="about-description">
+            Dholimara Homestay is waiting for you...
+        </p>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="pexels-pixabay-158063.jpg" alt="Dholimara Homestay">
+            </div>
+            <div class="about-content">
+                <p class="about-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugit porro voluptatem ratione, sunt fuga, placeat
+                    adipisci dolores maxime blanditiis facilis, officia nobis non tempore aliquid amet tenetur impedit sapiente.
+                </p>
+                <div class="additional-info" id="moreInfo" style="display: none;">
+                    <p>
+                        This is additional information about Dholimara Homestay. 
+                        Here you can include details about the amenities, activities, or any other relevant information 
+                        that might attract potential visitors.
+                    </p>
+                </div>
+                <button class="read-more-button" onclick="toggleReadMore()">Read More...</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="team">
+        <h1>Meet Our Team</h1>
+        <div class="team-cards">
+            <!-- Cards here -->
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="pal singh.png" alt="User 1">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Pal Singh Gharti</h2>
+                    <p class="card-role">CEO and Founder</p>
+                    <p class="card-email">Palsingh123@gmail.com</p>
+                    <p><button class="button" onclick="showPhoneNumber(this, '+123 456 7890')">Contact</button></p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="chitrakanwar.png" alt="User 2">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Chitra Bahadur Kanwar</h2>
+                    <p class="card-role">Co-Founder</p>
+                    <p class="card-email">Chitra123@gmail.com</p>
+                    <p><button class="button" onclick="showPhoneNumber(this, '+321 654 9870')">Contact</button></p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="man bahadur.png" alt="User 3">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Man Bahadur Thada</h2>
+                    <p class="card-role">Co-Founder</p>
+                    <p class="card-email">Manbahadur123@gmail.com</p>
+                    <p><button class="button" onclick="showPhoneNumber(this, '+987 654 3210')">Contact</button></p>
+                </div>
+            </div>
+            
+            <script>
+                       
+                 function toggleReadMore() {
+                    const moreInfo = document.getElementById("moreInfo");
+                     if (moreInfo.style.display === "none") {
+                        moreInfo.style.display = "block"; // Show additional info
+                    } else {
+                        moreInfo.style.display = "none"; // Hide additional info
+                   }
+               }
+
+
+                function showPhoneNumber(button, phoneNumber) {
+                    button.classList.add('fade');
+                    setTimeout(() => {
+                        if (button.innerHTML === "Contact") {
+                            button.innerHTML = phoneNumber;
+                            button.style.backgroundColor = "#888";
+                        } else {
+                            button.innerHTML = "Contact";
+                            button.style.backgroundColor = "#40b736";
+                        }
+                        button.classList.remove('fade');
+                    }, 300);
+                }
+
+            </script>
+        </div>
+    </section>
+
+</body>
+</html>

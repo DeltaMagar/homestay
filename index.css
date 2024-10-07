@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    padding-top: 55px; 
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 55px;
+    background-color: rgb(184, 181, 181);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.logo img {
+    margin-top: 12px;
+    max-height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Hamburger Menu */
+.hamburger, .close-btn {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 11;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:  #128a00;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('pexels-pixabay-158063.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#home h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+/* Homestay Section */
+#homestay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    font-size: 48px;
+    color: #8c729a;
+    margin-bottom: 30px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.img2 img, .img3 img, .img4 img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box-content, .box-content1, .box-content2 {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.box-content h2, .box-content1 h2, .box-content2 h2 {
+    font-size: 36px;
+    color: #e30000;
+    margin-bottom: 20px;
+}
+
+.box-content p, .box-content1 p, .box-content2 p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.box-content a, .box-content1 a, .box-content2 a, .btn a {
+    text-decoration: none;
+    background-color: #128a00;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.box-content a:hover, .box-content1 a:hover, .box-content2 a:hover, .btn a:hover {
+    background-color: #0d6600;
+}
+
+/* Adventure Section */
+#Adventure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* Food Section */
+#food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Footer Section */
+.footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffdd57;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffdd57;
+}
+
+/* About Us Section */
+.about-us p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.about-us a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about-us a:hover {
+    color: #ffdd57;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons li a:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box, .box1, .box2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-content, .box-content1, .box-content2 {
+        margin-left: 0;
+    }
+
+    .img2 img, .img3 img, .img4 img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    #home p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    /* Mobile Navbar */
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: right 0.3s ease;
+        z-index: 9;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        padding: 12px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .hamburger, .close-btn {
+        display: block;
+    }
+}
